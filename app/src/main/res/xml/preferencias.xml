@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="Configura"
+        android:title="Configuración"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:defaultValue="0"
+        android:layout="@drawable/red_background_white_text"
+        android:textColor="#FFFFFF" />
+
+    <CheckBoxPreference
+        android:key="Musica"
+        android:title="Reproducir musica"
+        android:summary="Se reproduce musica de fondo "/>
+    <EditTextPreference
+        android:key="graficos"
+        android:title="Tipo de graficos"
+        android:summary="Se escoge la representacion de gradicos"
+        android:inputType="number"
+        android:defaultValue="12"/>
+    <ListPreference
+        android:key="Numero"
+        android:title="Numero de Fragmentos"
+        android:summary="En cuantoss trozos se divide un asteroide"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:defaultValue="0"/>
+
+
+    <PreferenceCategory android:title="Modo multijugador">
+        <!-- 这里可以包含其他首选项项 -->
+    </PreferenceCategory>
+
+
+
+    <CheckBoxPreference
+        android:key="Activar"
+        android:title="Activar multijugador"
+
+    />
+    <EditTextPreference
+        android:key="Maximo"
+        android:title="Máximo de jugadores"
+
+        android:inputType="number"
+        android:defaultValue="12"
+    />
+
+    <ListPreference
+        android:key="conexion"
+        android:title="Tipo de conexion"
+        android:summary="Qué lugares quieres que aparezcan antes"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:defaultValue="0"/>
+
+
+</androidx.preference.PreferenceScreen>
+
