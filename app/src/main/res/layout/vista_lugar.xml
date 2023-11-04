@@ -187,18 +187,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right" >
+
                 <ImageView
                     android:id="@+id/camara"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:contentDescription="logo cámara"
+                    android:onClick="tomarFoto"
                     android:src="@android:drawable/ic_menu_camera" />
                 <ImageView
                     android:id="@+id/galeria"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:contentDescription="logo galería"
+                    android:onClick="fotoDeGaleria"
                     android:src="@android:drawable/ic_menu_gallery" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="Eliminar foto"
+                    android:onClick="eliminarFoto"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
